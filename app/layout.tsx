@@ -1,15 +1,15 @@
 import '@/app/ui/global.css';
-import { inter } from '@/app/ui/fonts';
+import { kreon } from '@/app/ui/fonts';
 import { Metadata } from 'next';
 
 
 export const metadata: Metadata = {
   title: {
-    template: '%s | Acme Dashboard',
-    default: 'Acme Dashboard',
+    template: '%s | Small Business Invoice Tracker',
+    default: 'The Boston Block',
   },
-  description: 'Starter Project for Building a Small Business Finance & Invoice Tracker.',
-  metadataBase: new URL('https://next-learn-dashboard.vercel.sh'),
+  description: 'Small Business Finance & Invoice Tracker.',
+  metadataBase: new URL('https://small-biz-financial-management-portal.vercel.app/'),
 };
 
 export default function RootLayout({
@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} antialiased`}>{children}</body>
+      <body className={`${kreon.className} antialiased`}>{children}</body>
     </html>
   );
 }
